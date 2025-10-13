@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PalabraPalíndroma", "PalabraPalíndroma\PalabraPalíndroma.csproj", "{BFDA113A-B89A-490C-B0A5-3C6D25CFA8E3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BFDA113A-B89A-490C-B0A5-3C6D25CFA8E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFDA113A-B89A-490C-B0A5-3C6D25CFA8E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFDA113A-B89A-490C-B0A5-3C6D25CFA8E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFDA113A-B89A-490C-B0A5-3C6D25CFA8E3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4BE86651-3ABE-43B3-AF5C-E75D4F7053AF}
+	EndGlobalSection
+EndGlobal

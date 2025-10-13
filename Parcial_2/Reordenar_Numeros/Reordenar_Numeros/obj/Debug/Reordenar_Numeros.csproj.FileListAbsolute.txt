@@ -1,0 +1,7 @@
+C:\Users\Admin\Desktop\Tec\Estructuras\Reordenar_Numeros\Reordenar_Numeros\bin\Debug\Reordenar_Numeros.exe.config
+C:\Users\Admin\Desktop\Tec\Estructuras\Reordenar_Numeros\Reordenar_Numeros\bin\Debug\Reordenar_Numeros.exe
+C:\Users\Admin\Desktop\Tec\Estructuras\Reordenar_Numeros\Reordenar_Numeros\bin\Debug\Reordenar_Numeros.pdb
+C:\Users\Admin\Desktop\Tec\Estructuras\Reordenar_Numeros\Reordenar_Numeros\obj\Debug\Reordenar_Numeros.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\Tec\Estructuras\Reordenar_Numeros\Reordenar_Numeros\obj\Debug\Reordenar_Numeros.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Tec\Estructuras\Reordenar_Numeros\Reordenar_Numeros\obj\Debug\Reordenar_Numeros.exe
+C:\Users\Admin\Desktop\Tec\Estructuras\Reordenar_Numeros\Reordenar_Numeros\obj\Debug\Reordenar_Numeros.pdb

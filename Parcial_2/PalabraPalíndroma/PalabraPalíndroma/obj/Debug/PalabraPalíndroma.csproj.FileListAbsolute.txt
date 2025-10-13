@@ -1,0 +1,7 @@
+C:\Users\Admin\Desktop\Tec\5-semestre\Estructuras\PalabraPalíndroma\PalabraPalíndroma\bin\Debug\PalabraPalíndroma.exe.config
+C:\Users\Admin\Desktop\Tec\5-semestre\Estructuras\PalabraPalíndroma\PalabraPalíndroma\bin\Debug\PalabraPalíndroma.exe
+C:\Users\Admin\Desktop\Tec\5-semestre\Estructuras\PalabraPalíndroma\PalabraPalíndroma\bin\Debug\PalabraPalíndroma.pdb
+C:\Users\Admin\Desktop\Tec\5-semestre\Estructuras\PalabraPalíndroma\PalabraPalíndroma\obj\Debug\PalabraPalíndroma.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\Tec\5-semestre\Estructuras\PalabraPalíndroma\PalabraPalíndroma\obj\Debug\PalabraPalíndroma.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Tec\5-semestre\Estructuras\PalabraPalíndroma\PalabraPalíndroma\obj\Debug\PalabraPalíndroma.exe
+C:\Users\Admin\Desktop\Tec\5-semestre\Estructuras\PalabraPalíndroma\PalabraPalíndroma\obj\Debug\PalabraPalíndroma.pdb
