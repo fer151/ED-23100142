@@ -1,0 +1,7 @@
+C:\Users\Admin\Desktop\Tec\5-semestre\Estructuras\Parcial_2\ValidacionXML\ValidacionXML\bin\Debug\ValidacionXML.exe.config
+C:\Users\Admin\Desktop\Tec\5-semestre\Estructuras\Parcial_2\ValidacionXML\ValidacionXML\bin\Debug\ValidacionXML.exe
+C:\Users\Admin\Desktop\Tec\5-semestre\Estructuras\Parcial_2\ValidacionXML\ValidacionXML\bin\Debug\ValidacionXML.pdb
+C:\Users\Admin\Desktop\Tec\5-semestre\Estructuras\Parcial_2\ValidacionXML\ValidacionXML\obj\Debug\ValidacionXML.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\Tec\5-semestre\Estructuras\Parcial_2\ValidacionXML\ValidacionXML\obj\Debug\ValidacionXML.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Tec\5-semestre\Estructuras\Parcial_2\ValidacionXML\ValidacionXML\obj\Debug\ValidacionXML.exe
+C:\Users\Admin\Desktop\Tec\5-semestre\Estructuras\Parcial_2\ValidacionXML\ValidacionXML\obj\Debug\ValidacionXML.pdb
