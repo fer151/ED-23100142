@@ -1,20 +1,173 @@
-# Estrucutras de Datos
+# **Investigación: Tipos de Estructuras de Datos**
 
-## Conceptos
-Las estructuras de datos lineales son aquellas en las que los elementos se almacenan uno detrás de otro, siguiendo un orden definido.
-Esto significa que cada elemento tiene un antecesor y un sucesor, excepto el primero y el último.
+## **1. Estructuras Lineales**
+**Concepto:**  
+Una estructura de datos es una forma organizada de almacenar y gestionar información dentro de la memoria de una computadora, de manera que pueda utilizarse de forma eficiente.
+En otras palabras, define cómo se guardan, relacionan y manipulan los datos para facilitar su acceso y procesamiento.
 
+### **1.1 Arreglos**
+**Concepto:**  
+Un arreglo es una colección de elementos del mismo tipo almacenados en posiciones contiguas de memoria. Cada elemento se accede mediante un índice.
 
-Entre las estructuras lineales más comunes encontramos:
+**Tipos:**
+- **Unidimensional:** Contiene una sola fila o columna de datos.
+- **Multidimensional:** Puede contener varias filas y columnas, como una matriz.
 
-| **Tipo de Estructura** | **Descripción** | **Ejemplo o Aplicación** |
-|--------------------------|-----------------|---------------------------|
-| **Arreglos (Arrays)** | Son conjuntos de elementos del mismo tipo, guardados en posiciones contiguas de memoria. Cada dato dentro del arreglo se identifica mediante un índice, lo que permite acceder rápidamente a cualquier posición. | Un arreglo puede almacenar las calificaciones de un grupo de alumnos o los días de la semana. |
-| **Listas** | Son colecciones dinámicas de datos en las que se pueden insertar o eliminar elementos fácilmente sin necesidad de mover todo el contenido, como ocurre en los arreglos. Las listas se enlazan mediante punteros o referencias, lo que las hace muy útiles cuando se desconoce la cantidad exacta de datos que se manejará. | Administración de tareas, registros dinámicos o listas de reproducción. |
-| **Pilas (Stacks)** | Funcionan bajo el principio **LIFO (Last In, First Out)**, es decir, el último elemento que entra es el primero que sale. | Una pila de platos: el último que colocas arriba será el primero en retirarse. También se usa en el control de llamadas de funciones o el historial de navegación. |
-| **Colas (Queues)** | Trabajan con el principio **FIFO (First In, First Out)**, donde el primer elemento en entrar es el primero en salir. | Una fila de personas esperando su turno, la gestión de impresoras o la cola de procesos en un sistema operativo. |
-| **Uso General** | Cada estructura se aplica de acuerdo con la necesidad del programa: los arreglos para datos fijos, las listas para datos variables, las pilas para procesos reversibles y las colas para flujos ordenados. | Permiten elegir el método más eficiente para almacenar o procesar información. |
-| **Importancia** | Las estructuras lineales son esenciales porque proporcionan una forma clara y eficiente de manejar la información. Permiten optimizar el tiempo de búsqueda y acceso, facilitan la organización secuencial y son la base de estructuras más complejas como árboles y grafos. | Contribuyen a que los programas sean más claros, rápidos, ordenados y fáciles de mantener. |
+**Aplicación:**  
+Se utilizan para almacenar listas de valores como calificaciones, nombres, precios o coordenadas en programas que requieren acceso rápido a los datos.
+
+**Ventajas:**  
+- Acceso directo e inmediato a cualquier elemento.  
+- Fácil de implementar.  
+- Útil para manejar grandes cantidades de datos homogéneos.
+
+**Desventajas:**  
+- Tamaño fijo (no se puede cambiar en ejecución).  
+- Ineficiente al insertar o eliminar datos intermedios.  
+- Solo almacena datos del mismo tipo.
+
+---
+
+### **1.2 Pilas (Stacks)**
+**Concepto:**  
+Es una estructura que sigue el principio **LIFO (Last In, First Out)**: el último elemento en entrar es el primero en salir.
+
+**Aplicación:**  
+Se usa en control de llamadas de funciones, deshacer acciones (Ctrl + Z), manejo de expresiones matemáticas y almacenamiento temporal de datos.
+
+**Ventajas:**  
+- Facilita el control de procesos reversibles.  
+- Eficiente para manejar datos con orden específico.  
+- Implementación sencilla mediante arreglos o listas.
+
+**Desventajas:**  
+- Acceso limitado solo al elemento superior.  
+- No permite búsqueda directa de elementos intermedios.  
+- Puede causar desbordamiento si no se controla el tamaño.
+
+---
+
+### **1.3 Colas (Queues)**
+**Concepto:**  
+Estructura de tipo **FIFO (First In, First Out)**: el primer elemento en entrar es el primero en salir.
+
+**Aplicación:**  
+Se utiliza en la gestión de tareas por turno, colas de impresión, procesamiento de solicitudes o simulaciones de atención al cliente.
+
+**Ventajas:**  
+- Mantiene el orden de procesamiento.  
+- Ideal para flujos de datos secuenciales.  
+- Facilita el control de procesos en espera.
+
+**Desventajas:**  
+- Acceso restringido (solo al frente y al final).  
+- Difícil de manipular si el tamaño varía constantemente.  
+- Requiere memoria adicional para estructuras dinámicas.
+
+---
+
+### **1.4 Listas Enlazadas**
+**Concepto:**  
+Colección de nodos conectados entre sí mediante punteros o referencias. Cada nodo contiene un dato y una referencia al siguiente (o al anterior).
+
+**Tipos:**
+- **Simplemente Enlazada:** Cada nodo apunta al siguiente.  
+- **Doblemente Enlazada:** Cada nodo apunta al siguiente y al anterior.  
+- **Circular:** El último nodo apunta al primero.
+
+**Aplicación:**  
+Se emplean en sistemas que requieren inserciones y eliminaciones frecuentes, como menús dinámicos, administración de memoria o reproductores multimedia.
+
+**Ventajas:**  
+- Tamaño dinámico (crece o disminuye según necesidad).  
+- Inserciones y eliminaciones rápidas.  
+- Eficiente para recorrer datos secuenciales.
+
+**Desventajas:**  
+- Acceso secuencial (no se puede acceder directamente por índice).  
+- Consumo extra de memoria por los punteros.  
+- Más complejas de implementar que los arreglos.
+
+---
+
+## **2. Estructuras No Lineales**
+
+### **2.1 Grafos**
+**Concepto:**  
+Un grafo está formado por **nodos (vértices)** y **conexiones (aristas)** que representan relaciones entre elementos.
+
+**Aplicación:**  
+Modelan redes sociales, rutas de transporte, mapas, conexiones eléctricas o enlaces web.
+
+**Ventajas:**  
+- Representa relaciones complejas.  
+- Muy flexible para múltiples tipos de conexiones.  
+- Útil para búsqueda de rutas y análisis de redes.
+
+**Desventajas:**  
+- Complejo de implementar y recorrer.  
+- Alto consumo de memoria si tiene muchos nodos.  
+- Difícil de representar gráficamente cuando es grande.
+
+---
+
+### **2.2 Árboles**
+**Concepto:**  
+Estructura jerárquica donde cada nodo tiene un valor y referencias a sus nodos hijos. El nodo superior se llama **raíz**.
+
+**Aplicación:**  
+Se usa en sistemas de archivos, bases de datos, inteligencia artificial, y para optimizar búsquedas (árbol binario, AVL, etc.).
+
+**Ventajas:**  
+- Permite búsqueda y clasificación eficientes.  
+- Facilita representar jerarquías.  
+- Optimiza operaciones de inserción y eliminación.
+
+**Desventajas:**  
+- Puede desequilibrarse y perder eficiencia.  
+- Difícil de mantener en estructuras grandes.  
+- Requiere más memoria por las referencias.
+
+---
+
+## **3. Estructuras Abstractas**
+
+### **3.1 Conjuntos (Set)**
+**Concepto:**  
+Colección de elementos únicos (sin repetición) donde el orden no importa.
+
+**Aplicación:**  
+Gestión de permisos, eliminación de duplicados o comparación de grupos de datos.
+
+**Ventajas:**  
+- Evita duplicación de datos.  
+- Fácil para operaciones de unión, intersección y diferencia.  
+- Ideal para comparación rápida de elementos.
+
+**Desventajas:**  
+- No permite elementos repetidos.  
+- Acceso no ordenado.  
+- Más lento en operaciones de recorrido que una lista.
+
+---
+
+### **3.2 Diccionarios (Map o HashMap)**
+**Concepto:**  
+Almacenan datos en pares **clave–valor**, donde cada clave es única y se asocia a un valor específico.
+
+**Aplicación:**  
+Usado en bases de datos, almacenamiento en caché, configuraciones, o registros de usuarios (clave = ID, valor = nombre).
+
+**Ventajas:**  
+- Acceso rápido mediante claves.  
+- Organización eficiente de datos no secuenciales.  
+- Muy útil para búsquedas instantáneas.
+
+**Desventajas:**  
+- Mayor uso de memoria.  
+- Puede tener colisiones de claves.  
+- Complejo de implementar sin funciones hash adecuadas.
+
 
 
 
