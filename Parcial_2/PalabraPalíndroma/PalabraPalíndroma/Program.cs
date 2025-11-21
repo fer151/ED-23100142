@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PalabraPalíndroma
+namespace PalabraPalindroma
 {
     internal class Program
     {
@@ -20,7 +20,7 @@ namespace PalabraPalíndroma
 
                 if (entrada.Trim().Equals("salir", StringComparison.OrdinalIgnoreCase))
                     break;
-                       
+
                 bool esPal = EsPalindromoConPila(entrada);
 
                 Console.WriteLine(esPal
@@ -31,28 +31,75 @@ namespace PalabraPalíndroma
             Console.WriteLine("Fin. Presiona Enter para cerrar...");
             Console.ReadLine();
         }
+
         static bool EsPalindromoConPila(string strCadena)
         {
-            // PILA
-            Stack<char> pila = new Stack<char>();
+            ClasePilaDinamica<char> pila = new ClasePilaDinamica<char>();
 
-            // for (i = 0; i < len(strCadena); i++) { c = strCadena[i]; push(c); }
             for (int i = 0; i < strCadena.Length; i++)
             {
                 char c = strCadena[i];
                 pila.Push(c);
             }
 
-            // Mientras pila.tamanio > 0: c = Pop(); CadenaInv = CadenaInv + c
             string cadenaInv = string.Empty;
-            while (pila.Count > 0)
+            while (!pila.Vacia())
             {
                 char c = pila.Pop();
                 cadenaInv += c;
             }
 
-            // strCadena == cadenaInv ? es palíndromo : no es palíndromo
             return strCadena == cadenaInv;
+        }
+    }
+
+    
+    public class ClaseNodo<Tipo>
+    {
+        public Tipo ObjetoConDatos { get; set; }
+        public ClaseNodo<Tipo> Siguiente { get; set; }
+
+        public ClaseNodo(Tipo datos)
+        {
+            ObjetoConDatos = datos;
+            Siguiente = null;
+        }
+    }
+
+    public class ClasePilaDinamica<Tipo> where Tipo : IEquatable<Tipo>
+    {
+        private ClaseNodo<Tipo> _Top;
+
+        public ClasePilaDinamica()
+        {
+            _Top = null;
+        }
+
+        public bool Vacia()
+        {
+            return _Top == null;
+        }
+
+        public void Push(Tipo objeto)
+        {
+            ClaseNodo<Tipo> nuevoNodo = new ClaseNodo<Tipo>(objeto);
+            nuevoNodo.Siguiente = _Top;
+            _Top = nuevoNodo;
+        }
+
+        public Tipo Pop()
+        {
+            if (Vacia())
+                throw new InvalidOperationException("La pila está vacía.");
+
+            Tipo valor = _Top.ObjetoConDatos;
+            _Top = _Top.Siguiente;
+            return valor;
+        }
+
+        public void Vaciar()
+        {
+            _Top = null;
         }
     }
 }
